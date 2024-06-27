@@ -5,6 +5,7 @@
  */
 var clearDigits = function (input) {
     const clearDigits = new Array();
+    
     for (let current of input) {
         if (isDigit(current) && clearDigits.length > 0) {
             clearDigits.pop();
@@ -12,6 +13,7 @@ var clearDigits = function (input) {
         }
         clearDigits.push(current);
     }
+    
     return clearDigits.join('');
 };
 
